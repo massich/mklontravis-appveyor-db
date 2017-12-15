@@ -1,0 +1,3 @@
+[submodule "examples"]
+	path = OpenMEEG/examples
+	url = git://github.com/openmeeg/openmeeg_sample_data.git
