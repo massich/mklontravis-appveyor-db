@@ -88,6 +88,7 @@ else()
     set(MKL_INSTALL_COMMAND sudo ${MKL_INSTALL_COMMAND} -s ${CFGFILE})
 endif()
 
+message("------[ sik ]--- command: ${MKL_INSTALL_COMMAND}")
 execute_process(COMMAND ${MKL_INSTALL_COMMAND}
                 OUTPUT_FILE ${CMAKE_BINARY_DIR}/install-mkl.out
                 ERROR_FILE ${CMAKE_BINARY_DIR}/install-mkl.err
