@@ -66,7 +66,7 @@ else()
 endif()
 
 if (WIN32)
-    set(MKL_INSTALL_COMMAND ${MKL_UNPACK_WORKING_DIRECTORY}/setup.exe install --components=all -eula=accept
+    set(MKL_INSTALL_COMMAND ${MKL_UNPACK_WORKING_DIRECTORY}/setup.exe install --components=all --eula=accept
                                 --output=${CMAKE_BINARY_DIR}/install-mkl.log
                                 --installdir=${MKL_INSTALL_DIR})
 else()
